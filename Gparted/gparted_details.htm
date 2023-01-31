@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml' xml:lang='en-US' lang='en-US'>
+<head>
+<meta http-equiv='Content-Type' content='text/html;charset=utf-8' />
+<title>GParted Details</title>
+<style type='text/css'>
+table {border:0}
+th {text-align:left}
+.number_col {text-align:right}
+</style>
+</head>
+<body>
+<p>GParted 1.3.1</p>
+<p>configuration --enable-libparted-dmraid --enable-online-resize</p>
+<p>libparted 3.4</p>
+<p>========================================</p>
+<table>
+<tr><th>Device:</th><td>/dev/sda</td></tr>
+<tr><th>Model:</th><td>ATA KINGSTON SA400S3</td></tr>
+<tr><th>Serial:</th><td>50026B73801E54E5</td></tr>
+<tr><th>Sector size:</th><td>512</td></tr>
+<tr><th>Total sectors:</th><td>468862128</td></tr>
+<tr><td colspan='2'>&nbsp;</td></tr>
+<tr><th>Heads:</th><td>255</td></tr>
+<tr><th>Sectors/track:</th><td>2</td></tr>
+<tr><th>Cylinders:</th><td>919337</td></tr>
+<tr><td colspan='2'>&nbsp;</td></tr>
+<tr><th>Partition table</th><td>gpt</td></tr>
+<tr><td colspan='2'>&nbsp;</td></tr>
+</table>
+<table>
+<tr><th>Partition</th><th>Type</th><th class='number_col'>Start</th><th class='number_col'>End</th><th>Flags</th><th>Partition Name</th><th>File System</th><th>Label</th><th>Mount Point</th></tr>
+<tr><td>/dev/sda1</td><td>Primary</td><td class='number_col'>2048</td><td class='number_col'>98303</td><td>boot, esp</td><td></td><td>fat32</td><td></td><td>/boot/efi</td></tr>
+<tr><td>/dev/sda2</td><td>Primary</td><td class='number_col'>98304</td><td class='number_col'>468860022</td><td></td><td></td><td>ext4</td><td></td><td>/, /var/snap/firefox/common/host-hunspell</td></tr>
+</table>
+<p>========================================</p>
+<table>
+<tr><th>Device:</th><td>/dev/sdb</td></tr>
+<tr><th>Model:</th><td>ATA ST1000DM003-1CH1</td></tr>
+<tr><th>Serial:</th><td>Z1D7P24S</td></tr>
+<tr><th>Sector size:</th><td>512</td></tr>
+<tr><th>Total sectors:</th><td>1953525168</td></tr>
+<tr><td colspan='2'>&nbsp;</td></tr>
+<tr><th>Heads:</th><td>255</td></tr>
+<tr><th>Sectors/track:</th><td>2</td></tr>
+<tr><th>Cylinders:</th><td>3830441</td></tr>
+<tr><td colspan='2'>&nbsp;</td></tr>
+<tr><th>Partition table</th><td>msdos</td></tr>
+<tr><td colspan='2'>&nbsp;</td></tr>
+</table>
+<table>
+<tr><th>Partition</th><th>Type</th><th class='number_col'>Start</th><th class='number_col'>End</th><th>Flags</th><th>Partition Name</th><th>File System</th><th>Label</th><th>Mount Point</th></tr>
+<tr><td>/dev/sdb1</td><td>Primary</td><td class='number_col'>63</td><td class='number_col'>1953523119</td><td></td><td></td><td>ntfs</td><td>BulkMachine</td><td></td></tr>
+</table>
+<p>========================================</p>
+<table>
+<tr><th>Device:</th><td>/dev/sdc</td></tr>
+<tr><th>Model:</th><td>ATA KINGSTON SA400S3</td></tr>
+<tr><th>Serial:</th><td>50026B73801E3BAE</td></tr>
+<tr><th>Sector size:</th><td>512</td></tr>
+<tr><th>Total sectors:</th><td>468862128</td></tr>
+<tr><td colspan='2'>&nbsp;</td></tr>
+<tr><th>Heads:</th><td>255</td></tr>
+<tr><th>Sectors/track:</th><td>2</td></tr>
+<tr><th>Cylinders:</th><td>919337</td></tr>
+<tr><td colspan='2'>&nbsp;</td></tr>
+<tr><th>Partition table</th><td>msdos</td></tr>
+<tr><td colspan='2'>&nbsp;</td></tr>
+</table>
+<table>
+<tr><th>Partition</th><th>Type</th><th class='number_col'>Start</th><th class='number_col'>End</th><th>Flags</th><th>Partition Name</th><th>File System</th><th>Label</th><th>Mount Point</th></tr>
+<tr><td>/dev/sdc1</td><td>Primary</td><td class='number_col'>2048</td><td class='number_col'>468860927</td><td></td><td></td><td>ext4</td><td>PR</td><td>/media/PR</td></tr>
+</table>
+<p>========================================</p>
+<table>
+<tr>
+<td colspan='2'>
+<b>Check and repair file system (ntfs) on /dev/sdb1</b>&nbsp;&nbsp;00:00:00&nbsp;&nbsp;&nbsp;&nbsp;( ERROR )
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table>
+<tr>
+<td colspan='2'>
+calibrate /dev/sdb1&nbsp;&nbsp;00:00:00&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table>
+<tr>
+<td colspan='2'>
+<i>path: /dev/sdb1 (partition)<br />start: 63<br />end: 1953523119<br />size 1953523057 (931.51 GiB)</i>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table>
+<tr>
+<td colspan='2'>
+check file system on /dev/sdb1 for errors and (if possible) fix them&nbsp;&nbsp;00:00:00&nbsp;&nbsp;&nbsp;&nbsp;( ERROR )
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table>
+<tr>
+<td colspan='2'>
+<b><i>ntfsresize -i -f -v &apos;/dev/sdb1&apos;</i></b>&nbsp;&nbsp;00:00:00&nbsp;&nbsp;&nbsp;&nbsp;( ERROR )
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table>
+<tr>
+<td colspan='2'>
+<i>ntfsresize v2021.8.22 (libntfs-3g)<br />Failed to read last sector (783517694): Invalid argument<br />HINTS: Either the volume is a RAID/LDM but it wasn&apos;t setup yet,<br />   or it was not setup correctly (e.g. by not using mdadm --build ...),<br />   or a wrong device is tried to be mounted,<br />   or the partition table is corrupt (partition is smaller than NTFS),<br />   or the NTFS boot sector is corrupt (NTFS size is not valid).<br />ERROR(22): Opening &apos;/dev/sdb1&apos; as NTFS failed: Invalid argument<br />The device &apos;/dev/sdb1&apos; doesn&apos;t have a valid NTFS.<br />Maybe you selected the wrong partition? Or the whole disk instead of a<br />partition (e.g. /dev/hda, not /dev/hda1)? This error might also occur<br />if the disk was incorrectly repartitioned (see the ntfsresize FAQ).<br /></i>
+</td>
+</tr>
+</table>
+<table>
+<tr>
+<td colspan='2'>
+<i></i>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
